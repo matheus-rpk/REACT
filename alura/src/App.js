@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component }from 'react';
+import listadenotas from './componentes/formulariocadastro'
+import formulariocadastro from './componentes/formulariocadastro'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <section>
+      <listadenotas/>
+      <formulariocadastro/>
+    </section>
+
+
   );
+
 }
 
 export default App;
